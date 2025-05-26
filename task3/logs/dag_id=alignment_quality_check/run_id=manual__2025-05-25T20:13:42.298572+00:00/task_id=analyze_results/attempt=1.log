@@ -1,0 +1,13 @@
+{"timestamp":"2025-05-25T20:21:50.511210","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-25T20:21:50.511494","level":"info","event":"Filling up the DagBag from /home/rustam/airflow/dags/alignment_quality_check.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-25T20:21:50.551774Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:50.551846Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:50.551880Z","level":"info","event":"Current task name:analyze_results","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:50.551903Z","level":"info","event":"Dag name:alignment_quality_check","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:50.551983Z","level":"info","event":"0 + 0 with mate mapped to a different chr (mapQ>=5)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:50.552013Z","level":"info","event":"Failed to get percentage","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:50.552052","level":"info","event":"Done. Returned value was: Error","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-25T20:21:50.552183","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01970914-6a53-77c3-ab82-c8c452ca6b18'), task_id='analyze_results', dag_id='alignment_quality_check', run_id='manual__2025-05-25T20:13:42.298572+00:00', try_number=1, map_index=-1, hostname='archlinux', context_carrier=None, task=<Task(PythonOperator): analyze_results>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 5, 25, 20, 21, 50, 484105, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-05-25T20:21:50.575750Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:50.575814Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:50.575844Z","level":"info","event":"Task operator:<Task(PythonOperator): analyze_results>","chan":"stdout","logger":"task"}

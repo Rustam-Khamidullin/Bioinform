@@ -1,0 +1,20 @@
+{"timestamp":"2025-05-25T18:55:36.434231","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-25T18:55:36.435468","level":"info","event":"Filling up the DagBag from /home/rustam/airflow/dags/hello_world.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-25T18:55:36.457001","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.457288","level":"info","event":"Running command: ['/usr/bin/bash', 'tmprq4mdo4u.sh']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.539408Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T18:55:36.539699Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T18:55:36.539841Z","level":"info","event":"Current task name:print_hello","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T18:55:36.539955Z","level":"info","event":"Dag name:hello_world","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T18:55:36.540059Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T18:55:36.540160Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T18:55:36.540260Z","level":"info","event":"Task operator:<Task(BashOperator): print_hello>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T18:55:36.471986","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.479204","level":"info","event":"[E::hts_open_format] Failed to open file \"\" : No such file or directory","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.479542","level":"info","event":"samtools flagstat: Cannot open input file \"\": No such file or directory","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.479844","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.484991","level":"info","event":"Mapped %","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.489496","level":"info","event":"(standard_in) 1: syntax error","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.490365","level":"info","event":"\u001b[0;31mNot OK\u001b[0m","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.490846","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T18:55:36.492096","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019708cc-e034-712f-aee7-41c37a778196'), task_id='print_hello', dag_id='hello_world', run_id='manual__2025-05-25T18:55:33.914777+00:00', try_number=1, map_index=-1, hostname='archlinux', context_carrier=None, task=<Task(BashOperator): print_hello>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 5, 25, 18, 55, 35, 101114, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}

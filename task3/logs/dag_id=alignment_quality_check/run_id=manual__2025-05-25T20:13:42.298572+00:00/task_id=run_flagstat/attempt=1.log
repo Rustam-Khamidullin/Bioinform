@@ -1,0 +1,30 @@
+{"timestamp":"2025-05-25T20:21:49.465914","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-25T20:21:49.466206","level":"info","event":"Filling up the DagBag from /home/rustam/airflow/dags/alignment_quality_check.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-25T20:21:49.471919","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.472125","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'samtools flagstat /home/rustam/airflow/data/aligned_reads.sam']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.497156Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:49.497277Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:49.497337Z","level":"info","event":"Current task name:run_flagstat","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:49.497392Z","level":"info","event":"Dag name:alignment_quality_check","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:49.480377","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.768826","level":"info","event":"116232 + 0 in total (QC-passed reads + QC-failed reads)","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.768936","level":"info","event":"115315 + 0 primary","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.768974","level":"info","event":"0 + 0 secondary","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769004","level":"info","event":"917 + 0 supplementary","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769034","level":"info","event":"0 + 0 duplicates","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769068","level":"info","event":"0 + 0 primary duplicates","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769097","level":"info","event":"115125 + 0 mapped (99.05% : N/A)","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769128","level":"info","event":"114208 + 0 primary mapped (99.04% : N/A)","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769170","level":"info","event":"0 + 0 paired in sequencing","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769202","level":"info","event":"0 + 0 read1","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769232","level":"info","event":"0 + 0 read2","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769261","level":"info","event":"0 + 0 properly paired (N/A : N/A)","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769290","level":"info","event":"0 + 0 with itself and mate mapped","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769319","level":"info","event":"0 + 0 singletons (N/A : N/A)","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769348","level":"info","event":"0 + 0 with mate mapped to a different chr","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769377","level":"info","event":"0 + 0 with mate mapped to a different chr (mapQ>=5)","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769448","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:21:49.769840","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01970914-6a52-75c5-a2a5-6c88072b054f'), task_id='run_flagstat', dag_id='alignment_quality_check', run_id='manual__2025-05-25T20:13:42.298572+00:00', try_number=1, map_index=-1, hostname='archlinux', context_carrier=None, task=<Task(BashOperator): run_flagstat>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 5, 25, 20, 21, 49, 440121, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-05-25T20:21:49.802142Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:49.802263Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:21:49.802323Z","level":"info","event":"Task operator:<Task(BashOperator): run_flagstat>","chan":"stdout","logger":"task"}

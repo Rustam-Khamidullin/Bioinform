@@ -1,0 +1,23 @@
+{"timestamp":"2025-05-25T20:13:44.453323","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-25T20:13:44.454405","level":"info","event":"Filling up the DagBag from /home/rustam/airflow/dags/alignment_quality_check.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-25T20:13:44.479696","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:44.480412","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'bwa index \"/home/rustam/airflow/data/ecoli_ref.fna\"']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:44.551473Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:13:44.551740Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:13:44.551868Z","level":"info","event":"Current task name:index_genome","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:13:44.551970Z","level":"info","event":"Dag name:alignment_quality_check","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:13:44.493615","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:44.576664","level":"info","event":"[bwa_index] Pack FASTA... 0.07 sec","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:44.576950","level":"info","event":"[bwa_index] Construct BWT for the packed sequence...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:47.169798","level":"info","event":"[bwa_index] 2.56 seconds elapse.","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:47.231384","level":"info","event":"[bwa_index] Update BWT... 0.06 sec","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:47.282084","level":"info","event":"[bwa_index] Pack forward-only FASTA... 0.05 sec","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:48.247401","level":"info","event":"[bwa_index] Construct SA from BWT and Occ... 0.95 sec","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:48.247820","level":"info","event":"[main] Version: 0.7.18-r1243-dirty","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:48.248009","level":"info","event":"[main] CMD: bwa index /home/rustam/airflow/data/ecoli_ref.fna","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:48.248151","level":"info","event":"[main] Real time: 3.749 sec; CPU: 3.709 sec","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:48.248500","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T20:13:48.249673","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01970914-6a50-7f1b-8f16-833021e6d93c'), task_id='index_genome', dag_id='alignment_quality_check', run_id='manual__2025-05-25T20:13:42.298572+00:00', try_number=1, map_index=-1, hostname='archlinux', context_carrier=None, task=<Task(BashOperator): index_genome>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 5, 25, 20, 13, 43, 210349, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-05-25T20:13:48.348778Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:13:48.349182Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T20:13:48.349377Z","level":"info","event":"Task operator:<Task(BashOperator): index_genome>","chan":"stdout","logger":"task"}
