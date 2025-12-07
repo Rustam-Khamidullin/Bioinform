@@ -1,0 +1,25 @@
+1)
+Последовательность: MSTLTSVSGFPRIGQNRELKKIIEGYWKGANDLAAVKATAAELRAKHWRLQQAAGIDLIASNDFSYYDQMLDTAILLNVIPQRYQRLAFDDQEDTLFAMA
+
+Инструмент 1 фолдинга белков: RoseTTAFold2
+Инструмент 2 фолдинга белков: AlphaFold2
+Инструмент парного выравнивания: Smith-Waterman-3D (в списке Alignment Method)
+
+
+2)
+https://colab.research.google.com/drive/1Bcd24HHZ6LTKLgnM92A1nNdXOLOvmR14?usp=sharing
+https://colab.research.google.com/drive/12XO0oE0Mrz7f6ogP8xkyyXenCksh2Wcw?usp=sharing
+
+
+3)
+В соотвествующих директориях
+
+4, 5, 6)
+alignment.png
+alignment_output
+
+7)
+Две модели показывают полное совпадение последовательностей (100%).
+Структуры очень близки: RMSD = 0.75, что говорит о хорошем наложении.
+Основная структура совпадает. Различия минимальны и локальны.
+В целом предсказания консистентны и хорошо согласованы.
